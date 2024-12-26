@@ -11,7 +11,7 @@ from steam_web_api import Steam
 
 class gameBase():
     def __init__(self):
-        self.connection = sqlite3.connect('gameBase.db') # создаем базу данных
+        self.connection = sqlite3.connect('db\gameBase.db') # создаем базу данных
         self.cursor = self.connection.cursor() # курсор для выполнения операций
         self.createGamesDBTable()
 

@@ -25,6 +25,31 @@
     <Compile Include="main_ui.py" />
     <Compile Include="steam_api.py" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="build\" />
+    <Folder Include="build\main_project\" />
+    <Folder Include="build\main_project\localpycs\" />
+    <Folder Include="static\" />
+    <Folder Include="static\files\" />
+    <Folder Include="static\img\" />
+    <Folder Include="static\ui\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="build\main_project\Analysis-00.toc" />
+    <Content Include="build\main_project\base_library.zip" />
+    <Content Include="build\main_project\EXE-00.toc" />
+    <Content Include="build\main_project\localpycs\pyimod01_archive.pyc" />
+    <Content Include="build\main_project\localpycs\pyimod02_importers.pyc" />
+    <Content Include="build\main_project\localpycs\pyimod03_ctypes.pyc" />
+    <Content Include="build\main_project\localpycs\pyimod04_pywin32.pyc" />
+    <Content Include="build\main_project\localpycs\struct.pyc" />
+    <Content Include="build\main_project\main_project.pkg" />
+    <Content Include="build\main_project\PKG-00.toc" />
+    <Content Include="build\main_project\PYZ-00.pyz" />
+    <Content Include="build\main_project\PYZ-00.toc" />
+    <Content Include="build\main_project\warn-main_project.txt" />
+    <Content Include="build\main_project\xref-main_project.html" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
        Visual Studio and specify your pre- and post-build commands in

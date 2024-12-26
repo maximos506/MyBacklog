@@ -53,7 +53,7 @@ class MyApp(QWidget,):
         # Создание метки для изображения
         self.image_label = QLabel(self)
         self.image_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self.update_image('Logo.png')  # Укажите путь к изображению
+        self.update_image('static\img\Logo.png')  # Укажите путь к изображению
 
 
         self.layout.addWidget(self.image_label)
@@ -327,7 +327,7 @@ class MyApp(QWidget,):
     def lookGameWidgets(self):
         self.lookgameWidgets = []
         self.lookGame_image_label = QLabel(self)
-        self.LookGame_pixmap = QPixmap('gameStandartIcon.png')
+        self.LookGame_pixmap = QPixmap(u'static\img\gameStandartIcon.png')
         self.lookGame_image_label.setPixmap(self.LookGame_pixmap.scaled(300, 300, Qt.AspectRatioMode.KeepAspectRatio))
 
         self.lookGame_gameName = QLabel('Название игры')
@@ -542,7 +542,7 @@ class MyApp(QWidget,):
             self.lookGame_image_label.setPixmap(self.LookGame_pixmap.scaled(300, 300, Qt.AspectRatioMode.KeepAspectRatio))
             print(self.SteamImageURL)
         except Exception:
-            self.LookGame_pixmap = QPixmap('gameStandartIcon.png')
+            self.LookGame_pixmap = QPixmap('static\img\gameStandartIcon.png')
             self.lookGame_image_label.setPixmap(self.LookGame_pixmap.scaled(300, 300, Qt.AspectRatioMode.KeepAspectRatio))
             pass
         for widget in self.lookGameListObjs:
